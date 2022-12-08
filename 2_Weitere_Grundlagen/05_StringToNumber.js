@@ -4,7 +4,7 @@ let abc = "3.141"
 // String in eine Ganzzahl umwandeln
 console.log(parseInt(abc, 10))
 
-// String in eine Kmmazahl umwandeln
+// String in eine Kommazahl umwandeln
 console.log(parseFloat(abc))
 
 // Achtung beim Rechnen mit Kommazahlen! (Rundungsfehler...)
