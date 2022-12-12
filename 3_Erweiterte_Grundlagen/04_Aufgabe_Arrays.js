@@ -32,25 +32,42 @@ a)  Monika möchte unbedingt mit ihrem Freund "Paul" einen Sprachkurs belegen.
     Finde dazu heraus, welchen Sprachkurs "Paul" belegt hat und füge sie ans Ende der Teilnehmerliste
     und entferne ihn aus der Liste. */
 console.log("Lösung a:")
+console.log(english1.indexOf("Paul"))
+english2.push("Monika") 
 
 /*
 b) Stelle sicher, dass "Günther" aus der Liste entfernt wurde - geht das, ohne die gesamte Liste per console.log auszugeben? */
 console.log("\nLösung b:")
+console.log(english1.indexOf("Günther"))
+console.log(english2.indexOf("Günther")) 
+
+let gIndex = english1.indexOf("Günther")
+english1.splice(gIndex, 1)
+
+console.log(english1.indexOf("Günther"))
+console.log(english2.indexOf("Günther")) 
 
 /*
-c)  Damit vor der Klasse die Anwesenheit kntrolliert werden kann, müssen die beiden Teilnehmerlisten sortiert werden
+c)  Damit vor der Klasse die Anwesenheit kontrolliert werden kann, müssen die beiden Teilnehmerlisten sortiert werden
     Stelle dies sicher! */
 console.log("\nLösung c:")
+english1.sort()
+english2.sort()
 
 /*
 d)  Ganz spontan möchte noch "Anton" am Sprachkurs teilnehmen.
     Sein Name beginnt glücklicherweise mit "A"
     Füge ihn daher an den Anfang der Liste vom Sprachkurs "english1" hinzu! */
 console.log("\nLösung d:")
+english1.splice(0, 0, "Anton") 
 
 /*
 e)  Wie viele Teilnehmer sind jetzt in der Liste "english1" & "english2"?
     Versuche erst jetzt, dir die Liste auszugeben und das Verhalten vom Programm 
     mit console.log-Befehlen nachzuvollziehen. */
 console.log("\nLösung e:")
+console.log(english1.length)
+console.log(english2.length)
 
+console.log(english1)
+console.log(english2)
