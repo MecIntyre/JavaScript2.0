@@ -5,8 +5,7 @@ let counter1 = 0
 while (counter1 < 5) {
     // counter = counter + 1
     counter1++
-
-console.log("Counter1: ", counter1)
+    console.log("Counter1: ", counter1)
 }
 
 /* 
