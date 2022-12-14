@@ -27,6 +27,6 @@ const lastElement = students.pop()
 console.log("lastElement", lastElement)
 console.log(students)
 
-// Ein Elemet überschreiben
+// Ein Element überschreiben
 students[0] = "Maximilian Müller"
 console.log(students)
